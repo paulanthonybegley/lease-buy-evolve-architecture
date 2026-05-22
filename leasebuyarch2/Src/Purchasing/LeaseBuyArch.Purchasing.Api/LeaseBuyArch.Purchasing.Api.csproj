@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.8" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Common\LeaseBuyArch.Common.Api\LeaseBuyArch.Common.Api.csproj" />
+        <ProjectReference Include="..\..\Common\LeaseBuyArch.Common.Infrastructure\LeaseBuyArch.Common.Infrastructure.csproj" />
+        <ProjectReference Include="..\LeaseBuyArch.Purchasing.DataAccess\LeaseBuyArch.Purchasing.DataAccess.csproj" />
+        <ProjectReference Include="..\LeaseBuyArch.Purchasing.IntegrationEvents\LeaseBuyArch.Purchasing.IntegrationEvents.csproj" />
+    </ItemGroup>
+</Project>

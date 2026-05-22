@@ -1,0 +1,294 @@
+# .gitignore for C#/.NET projects
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Packages
+# It is better to use a tool like dotnet restore to restore packages from the packages.config file.
+# However, if you do not use a package restore tool, uncomment the following line to ignore the packages folder.
+# [Pp]ackages/
+# except stylecop.xml, which is needed for StyleCop analysis
+# !_[Pp]ackages/stylecop.xml
+# ![Pp]ackages/repositories.config
+# ![Pp]ackages/build/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Benchmark Results
+[Bb]enchmark[Dd]ata*/
+[Cc]ache
+
+# Visual Studio files
+[Vv]isual[Ss]tudio/
+.*\.suo
+.*\.user
+.*\.userosscache
+.*\.sln.docstates
+
+# Visual Studio Code files
+.vscode/
+!*.vscode.settings.json
+!*.vscode.tasks.json
+!*.vscode.launch.json
+!*.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio
+.history/
+
+# Build artifacts of an ASP .NET application
+[Ll]og[Ii]n[Ss]tatus*
+[Bb]uild[Ll]og.*
+
+# NuGet Packages
+*.nupkg
+# The symbols package contains debug symbols and is produced by default
+*.snupkg
+
+# Office Add-ins
+[Oo]ffice/[Ll]addin*.cache
+[Oo]ffice/[Ll]addin
+
+# Tools
+[Cc]ache
+[Dd]ebug
+[Tt]emp
+[Mm]ost
+[Pp]rofile
+[Rr]elease
+[Rr]untimes
+[Ss]ecret
+[Ss]ourcecontrol
+[Uu]tilities
+[Uu]nit[Tt]ests
+
+# Visual Studio cache/cache files the IDE creates
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!?*[Cc]ache/
+
+# Client-side stylesheet
+*.[Ll][Ee][Ss][Ss]
+*.[Ss][Aa][Ss][Ss]
+*.[Cc][Ss][Ss]
+
+# Temporary files
+*~
+# Keep favicon.ico as it may be used as an icon for your project
+!favicon.ico
+
+# Resharper files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JustCode
+.JustCode
+
+# TeamCity coverage
+[Cc]overage.[Dd]ata
+[Cc]l[Oo]verage.[Xx]ml
+
+# dotCover
+*.[Dd]ot[Cc]over
+
+# NCrunch
+_NCrunch_*
+.*[Nn]crunch[Ss]ettings.*
+*.ncrunch*
+.*[Nn]crunch[Dd]b*
+ncrunch.temp*
+
+# MightyMoose
+*.[Mm]oose
+*.log
+
+# Visual Studio database files
+*.[Mm][Dd][Ff]
+
+# Ezphaser
+*.ezhp
+
+# Fody
+*.[Ff]ody
+
+# WebGrease
+*.[Ww]eb[Gg]rease
+
+# Node.js Tools for Visual Studio
+.[Nn]ode_[Tt]ools
+
+# Python Tools for Visual Studio
+.[Pp][Yy][Tt]_[Tt]ools
+
+# SQL Server Data Tools
+[Ss][Qq][Ll]_[Dd][Aa][Tt][Aa]_[Tt]ools
+
+# ASP.NET Scaffolding
+[Ss]caffolding[Rr]ead[Mm][Ee]
+
+# Azure Data Lake tools
+[Vv]iews/[Ii]nfo[Rr]m[Ll]ist.*
+[Vv]iews/[Pp]r[Oo][Vv][Ii][Dd][Ee]r*
+[Vv]iews/[Ss]c[Hh][Ee][Mm][Aa]*
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Paket dependency manager
+.paket/paket.exe
+paket-files/
+
+# FAKE - F# Make
+.fake/
+
+# JetBrains ReSharper Ultimate - Disable inspection inspection comments
+_ReSharper*/[Uu]nit[Tt]ests
+
+# StyleCop
+StyleCop.Cache
+
+# Visual Studio test explorer
+*.testsettings
+
+# Cake
+'tools/**'
+!tools/packages.config
+
+# Nbesis Studio
+[Ll]ocal[Hh]istory/
+
+# R# Unit test runner
+*TestResult*.xml
+
+# gulp
+[Dd]ist/
+[Ll]ib/
+[node]_[Mm]odules/
+[b]_[Oo]wer[Ss]hell/
+
+# dotnet CLI
+obj/
+bin/
+__PACKAGES__/
+
+# Local Visual Studio settings
+*.vssettings
+*.vspscc
+*.vssscc
+*.vspt
+
+# Output of the dotnet watch tool
+*.[Dd]ot[Ww]atch[Zz]ip
+
+# Editor folders
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# macOS files
+.DS_Store
+
+# Linux files
+*~
+
+# Windows files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs_vista.json
+*.[Ll][Nn][Kk]
+[Dd]esktop.ini
+
+# Files created by Visual Studio
+*.log
+*.srcs
+*.vcxproj.filters
+*.vcxproj.users
+*.vcxproj.*s
+*.vcxproj.*s
+*.vcxproj.*s
+
+# Backup files
+*.bak
+*.tmp
+*.temp
+*.old
+*.orig
+*.~
+*.swp
+*.swo
+*.swn
+*.sbl
+
+# Log files
+*.log
+
+# Cache files
+*.cache
+
+# Vim swap files
+[._]*.s[a-v][a-z]
+!*.sw[gx]
+!*.sw[px]
+[._]s.[c][a][t][t][e][r][y][l][l]
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.[c][o][m][p][i][l][e][d]
+*.class
+*.[j][a][r]
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.[l][o][g]
+*.[m][d][5]
+*.[s][h][a][1]
+*.[s][h][a][2][5][6]
+*.[s][h][a][5][1][2]
+*.[s][s][d][s]
+*.[p][g][p]
+*.[s][i][g]
+*.[c][r][t]
+*.[k][e][y]
+*.[p][1][2]
+*.[p][7][s]
+*.[c][e][r][t]
+*.[p][f][x]
+*.[p][e][m]
+*.[p][k][c][s][1][2]
+*.[p][k][c][s][7]
+*.[p][k][c][s][8]
+*.[p][k][c][s][9]
+*.[p][k][c][s][1][0]
+*.[p][k][c][s][1][1]
+*.[p][k][c][s][1][3]
+*.[p][k][c][s][1][4]
+*.[p][k][c][s][1][5]
+*.[p][k][c][s][1][6]
+*.[p][k][c][s][1][7]
+*.[p][k][c][s][1][8]
+*.[p][k][c][s][1][9]
+*.[p][k][c][s][2][0]
+*.[p][k][c][s][2][1]
+*.[p][k][c][s][2][2]
+*.[p][k][c][s][2][3]
+*.[p][k][c][s][2][4]
+*.[p][k][c][s][2][5]
+*.[p][k][c][s][2][6]
+*.[p][k][c][s][2][7]
+*.[p][k][c][s][2][8]
+*.[p][k][c][s][2][9]
+*.[p][k][c][s][3][0]

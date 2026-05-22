@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <ProjectReference Include="..\..\LeaseBuyArch.Common\LeaseBuyArch.Common.Infrastructure\LeaseBuyArch.Common.Infrastructure.csproj" />
+    </ItemGroup>
+</Project>

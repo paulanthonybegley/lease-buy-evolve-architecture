@@ -1,0 +1,96 @@
+### Variables
+@baseUrl = http://localhost:5014
+@customerId = a1b2c3d4-e5f6-7890-abcd-ef1234567890
+@vehicleId = b2c3d4e5-f6a7-8901-bcde-f12345678901
+@leaseId = d097f6fa-a1b7-4df6-ad02-d472838edf0b
+
+@purchaseId = fcc9f210-7ef5-4005-90ae-459b81ebf942
+
+### ===========================================
+### LEASING ENDPOINTS
+### ===========================================
+
+### 1. Prepare a new lease
+POST {{baseUrl}}/api/leasing
+Content-Type: application/json
+
+{
+  "customerId": "{{customerId}}",
+  "vehicleId": "{{vehicleId}}",
+  "vehicleMsrp": 45000.00,
+  "residualPercentage": 55,
+  "moneyFactor": 0.00125,
+  "termMonths": 36,
+  "annualMileageLimit": 12000,
+  "creditScore": 750
+}
+
+
+### 2. Sign a prepared lease (replace {{leaseId}} with the ID from step 1)
+PATCH {{baseUrl}}/api/leasing/{{leaseId}}
+Content-Type: application/json
+
+{}
+
+
+### 3. Try preparing a lease with low credit score (should fail — 409 Conflict)
+POST {{baseUrl}}/api/leasing
+Content-Type: application/json
+
+{
+  "customerId": "{{customerId}}",
+  "vehicleId": "{{vehicleId}}",
+  "vehicleMsrp": 45000.00,
+  "residualPercentage": 55,
+  "moneyFactor": 0.00125,
+  "termMonths": 36,
+  "annualMileageLimit": 12000,
+  "creditScore": 650
+}
+
+
+### 4. Try signing a non-existent lease (should fail — 404 Not Found)
+PATCH {{baseUrl}}/api/leasing/00000000-0000-0000-0000-000000000000
+Content-Type: application/json
+
+{}
+
+
+### ===========================================
+### PURCHASING ENDPOINTS
+### ===========================================
+
+### 5. Offer a purchase
+POST {{baseUrl}}/api/purchasing/offer
+Content-Type: application/json
+
+{
+  "customerId": "{{customerId}}",
+  "vehicleId": "{{vehicleId}}",
+  "vehicleMsrp": 45000.00,
+  "downPayment": 5000.00,
+  "apr": 4.5,
+  "termMonths": 60,
+  "preparedAt": "2026-05-15T12:00:00Z"
+}
+
+
+### 6. Complete a purchase (replace {{purchaseId}} with the ID from step 5)
+PATCH {{baseUrl}}/api/purchasing/{{purchaseId}}
+Content-Type: application/json
+
+{}
+
+
+### 7. Get all purchases
+GET {{baseUrl}}/api/purchasing
+Accept: application/json
+
+
+### ===========================================
+### COMPARISON ENDPOINTS
+### ===========================================
+
+### 8. Generate lease vs buy cost comparison report (stub — not implemented)
+GET {{baseUrl}}/api/comparison/generate
+Accept: application/json

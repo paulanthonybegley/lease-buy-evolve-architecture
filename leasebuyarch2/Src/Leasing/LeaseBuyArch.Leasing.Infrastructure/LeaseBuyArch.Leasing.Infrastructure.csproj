@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <PackageReference Include="MediatR" Version="12.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.8" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\LeaseBuyArch.Leasing.Application\LeaseBuyArch.Leasing.Application.csproj" />
+        <ProjectReference Include="..\LeaseBuyArch.Leasing.Core\LeaseBuyArch.Leasing.Core.csproj" />
+    </ItemGroup>
+</Project>

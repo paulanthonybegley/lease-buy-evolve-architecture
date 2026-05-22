@@ -1,0 +1,27 @@
+<Solution>
+  <Folder Name="/Common/">
+    <Project Path="Common/LeaseBuyArch.Common.Api/LeaseBuyArch.Common.Api.csproj" />
+    <Project Path="Common/LeaseBuyArch.Common.Core/LeaseBuyArch.Common.Core.csproj" />
+    <Project Path="Common/LeaseBuyArch.Common.Infrastructure/LeaseBuyArch.Common.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Comparison/">
+    <Project Path="Comparison/LeaseBuyArch.Comparison/LeaseBuyArch.Comparison.csproj" />
+  </Folder>
+  <Folder Name="/Leasing/">
+    <Project Path="Leasing/LeaseBuyArch.Leasing.Api/LeaseBuyArch.Leasing.Api.csproj" />
+    <Project Path="Leasing/LeaseBuyArch.Leasing.Application/LeaseBuyArch.Leasing.Application.csproj" />
+    <Project Path="Leasing/LeaseBuyArch.Leasing.Core/LeaseBuyArch.Leasing.Core.csproj" />
+    <Project Path="Leasing/LeaseBuyArch.Leasing.Infrastructure/LeaseBuyArch.Leasing.Infrastructure.csproj" />
+    <Project Path="Leasing/LeaseBuyArch.Leasing.IntegrationEvents/LeaseBuyArch.Leasing.IntegrationEvents.csproj" />
+  </Folder>
+  <Folder Name="/Purchasing/">
+    <Project Path="Purchasing/LeaseBuyArch.Purchasing.Api/LeaseBuyArch.Purchasing.Api.csproj" />
+    <Project Path="Purchasing/LeaseBuyArch.Purchasing.DataAccess/LeaseBuyArch.Purchasing.DataAccess.csproj" />
+    <Project Path="Purchasing/LeaseBuyArch.Purchasing.IntegrationEvents/LeaseBuyArch.Purchasing.IntegrationEvents.csproj" />
+  </Folder>
+  <Folder Name="/Vehicles/">
+    <Project Path="Vehicles/LeaseBuyArch.Vehicles.Api/LeaseBuyArch.Vehicles.Api.csproj" />
+    <Project Path="Vehicles/LeaseBuyArch.Vehicles.DataAccess/LeaseBuyArch.Vehicles.DataAccess.csproj" />
+  </Folder>
+  <Project Path="LeaseBuyArch/LeaseBuyArch.csproj" />
+</Solution>

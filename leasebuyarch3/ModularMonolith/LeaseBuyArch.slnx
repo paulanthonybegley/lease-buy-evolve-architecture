@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/Common/">
+    <Project Path="..\LeaseBuyArch.Common\LeaseBuyArch.Common.Api\LeaseBuyArch.Common.Api.csproj" />
+    <Project Path="..\LeaseBuyArch.Common\LeaseBuyArch.Common.Core\LeaseBuyArch.Common.Core.csproj" />
+    <Project Path="..\LeaseBuyArch.Common\LeaseBuyArch.Common.Infrastructure\LeaseBuyArch.Common.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Comparison/">
+    <Project Path="Comparison\LeaseBuyArch.Comparison\LeaseBuyArch.Comparison.csproj" />
+  </Folder>
+  <Folder Name="/Purchasing/">
+    <Project Path="Purchasing\LeaseBuyArch.Purchasing.Api\LeaseBuyArch.Purchasing.Api.csproj" />
+    <Project Path="Purchasing\LeaseBuyArch.Purchasing.DataAccess\LeaseBuyArch.Purchasing.DataAccess.csproj" />
+    <Project Path="Purchasing\LeaseBuyArch.Purchasing.IntegrationEvents\LeaseBuyArch.Purchasing.IntegrationEvents.csproj" />
+  </Folder>
+  <Folder Name="/Vehicles/">
+    <Project Path="Vehicles\LeaseBuyArch.Vehicles.Api\LeaseBuyArch.Vehicles.Api.csproj" />
+    <Project Path="Vehicles\LeaseBuyArch.Vehicles.DataAccess\LeaseBuyArch.Vehicles.DataAccess.csproj" />
+  </Folder>
+  <Project Path="LeaseBuyArch\LeaseBuyArch.csproj" />
+</Solution>

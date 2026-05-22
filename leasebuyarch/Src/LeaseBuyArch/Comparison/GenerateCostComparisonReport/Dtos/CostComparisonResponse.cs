@@ -1,0 +1,3 @@
+namespace EvolutionaryArchitecture.LeaseBuyArch.Comparison.GenerateCostComparisonReport.Dtos;
+
+internal sealed record CostComparisonResponse(IReadOnlyCollection<CostComparisonDto> ReportData);

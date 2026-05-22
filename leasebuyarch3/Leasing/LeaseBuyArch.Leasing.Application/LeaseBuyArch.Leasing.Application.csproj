@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <PackageReference Include="MediatR" Version="12.0.1" />
+        <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\LeaseBuyArch.Common\LeaseBuyArch.Common.Api\LeaseBuyArch.Common.Api.csproj" />
+        <ProjectReference Include="..\..\LeaseBuyArch.Common\LeaseBuyArch.Common.Infrastructure\LeaseBuyArch.Common.Infrastructure.csproj" />
+        <ProjectReference Include="..\LeaseBuyArch.Leasing.Core\LeaseBuyArch.Leasing.Core.csproj" />
+        <ProjectReference Include="..\LeaseBuyArch.Leasing.IntegrationEvents\LeaseBuyArch.Leasing.IntegrationEvents.csproj" />
+    </ItemGroup>
+</Project>
